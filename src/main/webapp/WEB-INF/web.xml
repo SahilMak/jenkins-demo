@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>servlet-mockito</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+ <!-- Not necessary, since we are using the @WebServlet annotation on our controllers 
+   <servlet>
+  	<display-name>UserController</display-name>
+  	<servlet-name>UserController</servlet-name>
+  	<servlet-class>com.revature.controllers.UserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserController</servlet-name>
+  	<url-pattern>/users</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<display-name>AccountController</display-name>
+  	<servlet-name>AccountController</servlet-name>
+  	<servlet-class>com.revature.controllers.UserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AccountController</servlet-name>
+  	<url-pattern>/accounts</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<display-name>UserAccountController</display-name>
+  	<servlet-name>UserAccountController</servlet-name>
+  	<servlet-class>com.revature.controllers.UserController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserAccountController</servlet-name>
+  	<url-pattern>/user-accounts</url-pattern>
+  </servlet-mapping>
+-->
+</web-app>
