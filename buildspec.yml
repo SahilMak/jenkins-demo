@@ -10,13 +10,14 @@ phases:
     commands:
       - echo Maven build started on `date`
       - mvn clean package
-      
+      - mvn target/servlet-mockito-0.0.1-SNAPSHOT.war servlet-mockito-0.0.1-SNAPSHOT.war
 artifacts:
   files:
-    - target/servlet-mockito-0.0.1-SNAPSHOT.war
+    - servlet-mockito-0.0.1-SNAPSHOT.war
     - .ebextensions/**/*
-  
 eb_codebuild_settings:
   CodeBuildServiceRole: AWS-Pipeline-Service
   ComputeType: BUILD_GENERAL1_SMALL
   Image: aws/codebuild/java:openjdk-8
+  Timeout: 60
+  base-directory: 'target/servlet-mockito'
